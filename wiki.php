@@ -6,7 +6,7 @@
 <body>
   <?php
     $lang = $_GET["lang"];
-    $motcle = $_GET["keyword"];
+    $motcle = $_GET["keywords"];
     trim($motcle);
     $motcle = str_replace (' ' , '_' , $motcle);
     $context  = stream_context_create(array('http' => array('header' => 'Accept: application/xml')));
