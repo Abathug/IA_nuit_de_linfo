@@ -49,14 +49,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Gilbert</a>
+                <a class="navbar-brand" href="http://cdn3.volusion.com/9nxdj.fchy5/v/vspfiles/photos/AR-29007-2.jpg?1383223688" target="_blank">Gilbert</a>
             </div>
             <!-- Top Menu Items -->
 
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
