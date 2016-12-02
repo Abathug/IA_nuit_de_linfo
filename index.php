@@ -79,7 +79,7 @@
 
       // echo "Keywords : "; print_r($keywords); echo "<br>";
 
-      if (in_array("blague", $keywords) || in_array("blagues", $keywords)) {
+      if ((in_array("blague", $keywords) || in_array("blagues", $keywords)) && !in_array("qu", $words)) {
         header('Location: testblagues.php');
         die();
       }
