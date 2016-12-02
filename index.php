@@ -79,6 +79,11 @@
 
       // echo "Keywords : "; print_r($keywords); echo "<br>";
 
+      if (in_array("blague", $keywords) || in_array("blagues", $keywords)) {
+        header('Location: testblagues.php');
+        die();
+      }
+
       header('Location: wiki.php?lang=fr&keywords=' . implode(" ", $keywords) . "&question=" . $firstWord);
       die();
     }
