@@ -110,7 +110,7 @@
   <body>
     <form action="#" method="post">
       <label for="question">Question :</label>
-      <input type="text" name="question" value="Votre question" required>
+      <input type="text" name="question" placeholder="Votre question" required>
       <input type="submit" name="submit" value="Envoyer">
     </form>
   </body>
