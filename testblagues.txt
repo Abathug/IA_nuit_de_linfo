@@ -1,7 +1,6 @@
-
 <?php
-$string = fopen("blagues.txt", "r");
-$chunks = split ("*", $string, 20);
-print_r($chunks);
-fclose($chunks);
+$string = fopen('blagues.txt', 'r')
+$chunks = spliti ("a", $string, 5);
+print_r($string);
+fclose($monfichier);
 ?>
