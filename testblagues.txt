@@ -1,0 +1,7 @@
+
+<?php
+$string = fopen("blagues.txt", "r");
+$chunks = split ("*", $string, 20);
+print_r($chunks);
+fclose($chunks);
+?>
