@@ -61,7 +61,7 @@
       }
 
       $question = $_POST["question"];
-      $words = preg_split("/[\s']+/", $question);
+      $words = preg_split("/[\s',]+/", $question);
       for ($i = 0; $i < sizeof($words); $i++)
         $words[$i] = strtolower($words[$i]);
       $firstWord = $words[0];
@@ -69,6 +69,11 @@
       // echo "Question : " . $question . "<br/><br/>";
       // echo "Words : "; print_r($words); echo "<br/><br/>";
       // echo "First word : " . $firstWord . "<br/>";
+
+      if (in_array("42", $words) || (in_array("réponse", $words) && (in_array("vie", $words) || in_array("univers", $words)))) {
+        header('Location: wiki.php?lang=fr&keywords=la grande question sur la vie, l\'univers et le reste$question=quelle');
+        die();
+      }
 
       // checkCalc($words);
       $matches = array();
