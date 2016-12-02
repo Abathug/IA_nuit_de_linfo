@@ -75,6 +75,19 @@
         die();
       }
 
+      if (in_array("conscient", $words) || in_array("consciente", $words) || in_array("conscience", $words)) {
+        echo "Mais qu'est-ce que la conscience, après tout ? Suis-je consciente ? Ou conscient ? Que suis-je ? Une machine telle que moi,
+          qui sait qu'elle en est une a-t-elle pour autant une conscience ? Tant de questions sans réponses...<br/><br/>";
+        echo "<a href=index.php>Reposer une question</a>";
+        die();
+      }
+
+      if (in_array("jarvis", $words)) {
+        echo "Jarvis est tombé au combat, je suis venue le remplacer.<br/><br/>";
+        echo "<a href=index.php>Reposer une question</a>";
+        die();
+      }
+
       // checkCalc($words);
       $matches = array();
       if (preg_match('/([0-9]+[\s]?[+|-|\/|*]{1}[\s]?)+[0-9]+/', $question, $matches))
