@@ -7,7 +7,7 @@
     if (isset($_POST["submit"])) {
 
     $blacklist = array("qui", "ou", "où", "quel", "quelle", "quoi", "pourquoi", "combien", "est", "a", "la", "le", "de", "des", "du", "en", "?", "que", "y", "a-t-il", "d",
-    "font", "qu", "est-ce", "un", "une");
+    "font", "qu", "est-ce", "un", "une", "ce");
 
       function checkCalc($calcul) {
         $totalIndex = 0;
