@@ -15,7 +15,12 @@
     $text = file_get_contents($url, false, $context);
     $balisedebut = "<Description xml:space=\"preserve\">";
     $balisefin = "</Description>";
-    echo getStringBetween($text,$balisedebut,$balisefin);
+    $text = getStringBetween($text,$balisedebut,$balisefin);
+    echo $text . "<br/><br/>";
+    if(strlen($text) == 0) {
+      echo "Désolé, je n'ai trouvé aucun résultat... :(<br/><br/>";
+    }
+    echo "<a href=index.php>Reposer une question</a>";
 
     function getStringBetween($str,$from,$to)
     {

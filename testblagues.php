@@ -9,7 +9,6 @@ function LineCount($fileName) {
         }
         fclose($h);
     }
-
     return($fileCount);
 }
 
@@ -21,6 +20,7 @@ while($i != $random) {
   $line = fgets($string,4096);
   $i++;
 }
-print_r($line);
+echo $line."<br/>";
 fclose($string);
+echo "<a href=index.php>Reposer une question</a>";
 ?>
